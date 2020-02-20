@@ -522,12 +522,6 @@ F 5 "CL10B103JB8NNNC" H 3050 7000 50  0001 C CNN "Part Number"
 	1    3050 7000
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3900 6400 3900 7650
-Wire Notes Line
-	600  6400 3900 6400
-Wire Notes Line
-	600  7650 3900 7650
 Wire Wire Line
 	3500 6650 3500 6850
 Wire Wire Line
@@ -603,11 +597,6 @@ Wire Wire Line
 	1000 5800 1000 5650
 Connection ~ 1000 5650
 Wire Wire Line
-	1200 1400 1200 1500
-Connection ~ 1200 1500
-Wire Wire Line
-	1200 1500 1200 1750
-Wire Wire Line
 	1200 1100 800  1100
 Wire Wire Line
 	800  1100 800  1450
@@ -615,25 +604,25 @@ Connection ~ 1200 1100
 $Comp
 L power:GND #PWR010
 U 1 1 5E235A77
-P 1800 1500
-F 0 "#PWR010" H 1800 1250 50  0001 C CNN
-F 1 "GND" V 1805 1372 50  0000 R CNN
-F 2 "" H 1800 1500 50  0001 C CNN
-F 3 "" H 1800 1500 50  0001 C CNN
-	1    1800 1500
+P 1800 1400
+F 0 "#PWR010" H 1800 1150 50  0001 C CNN
+F 1 "GND" V 1805 1272 50  0000 R CNN
+F 2 "" H 1800 1400 50  0001 C CNN
+F 3 "" H 1800 1400 50  0001 C CNN
+	1    1800 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_DIP_x01 SW1
 U 1 1 5E234436
-P 1500 1500
-F 0 "SW1" V 1454 1630 50  0000 L CNN
-F 1 "K2-1187SQ-A4SW-06" V 1545 1630 50  0000 L CNN
-F 2 "KiCad:K2-1187SQ-A4SW-06" H 1500 1500 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 1500 1500 50  0001 C CNN
-F 4 "K2-1187SQ-A4SW-06" H 1500 1500 50  0001 C CNN "Part Number"
-F 5 "C92584" H 1500 1500 50  0001 C CNN "LCSC"
-	1    1500 1500
+P 1500 1400
+F 0 "SW1" V 1454 1530 50  0000 L CNN
+F 1 "K2-1187SQ-A4SW-06" V 1545 1530 50  0000 L CNN
+F 2 "KiCad:K2-1187SQ-A4SW-06" H 1500 1400 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 1500 1400 50  0001 C CNN
+F 4 "K2-1187SQ-A4SW-06" H 1500 1400 50  0001 C CNN "Part Number"
+F 5 "C92584" H 1500 1400 50  0001 C CNN "LCSC"
+	1    1500 1400
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -795,9 +784,9 @@ Wire Wire Line
 	5300 2500 5700 2500
 Wire Wire Line
 	5700 4400 5300 4400
-Text Label 4350 2700 0    50   ~ 0
+Text Label 5700 2600 2    50   ~ 0
 NRST
-Text Label 4350 2800 0    50   ~ 0
+Text Label 4350 2700 0    50   ~ 0
 BOOT0
 $Comp
 L Mechanical:MountingHole H1
@@ -897,75 +886,97 @@ F 0 "C2" H 1065 4546 50  0000 L CNN
 F 1 "10uf" H 1065 4455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 4350 50  0001 C CNN
 F 3 "~" H 950 4500 50  0001 C CNN
-F 4 "C77040" H 950 4500 50  0001 C CNN "LCSC"
-F 5 "GRM188R60J106KE47D" H 950 4500 50  0001 C CNN "Part Number"
+F 4 "C38898" H 950 4500 50  0001 C CNN "LCSC"
+F 5 "0603X106K100NT" H 950 4500 50  0001 C CNN "Part Number"
 	1    950  4500
 	1    0    0    -1  
 $EndComp
-Text Label 5700 2800 2    50   ~ 0
-PA8
-Text Label 5700 2700 2    50   ~ 0
-PA9
-Text Label 5700 2600 2    50   ~ 0
-PA10
 Text Label 5700 2900 2    50   ~ 0
-PB15
+PA8
+Text Label 5700 2800 2    50   ~ 0
+PA9
+Text Label 5700 2700 2    50   ~ 0
+PA10
 Text Label 5700 3000 2    50   ~ 0
-PB14
+PB15
 Text Label 5700 3100 2    50   ~ 0
-PB13
-Text Label 5700 3400 2    50   ~ 0
-PB10
-Text Label 5700 3300 2    50   ~ 0
-PB11
-Text Label 5700 3700 2    50   ~ 0
-PB0
-Text Label 5700 3500 2    50   ~ 0
-PB2
-Text Label 5700 3600 2    50   ~ 0
-PB1
-Text Label 5700 4200 2    50   ~ 0
-PA3
-Text Label 5700 4100 2    50   ~ 0
-PA4
-Text Label 5700 4000 2    50   ~ 0
-PA5
-Text Label 5700 3900 2    50   ~ 0
-PA6
-Text Label 5700 3800 2    50   ~ 0
-PA7
-Text Label 4350 4300 0    50   ~ 0
-PA1
-Text Label 4350 4200 0    50   ~ 0
-PA0
-Text Label 4350 3900 0    50   ~ 0
-PC13
-Text Label 4350 4000 0    50   ~ 0
-PC14
-Text Label 4350 3500 0    50   ~ 0
-PB6
-Text Label 4350 3600 0    50   ~ 0
-PB7
-Text Label 4350 3700 0    50   ~ 0
-PB8
-Text Label 4350 3800 0    50   ~ 0
-PB9
-Text Label 4350 3400 0    50   ~ 0
-PB5
-Text Label 4350 3300 0    50   ~ 0
-PB4
-Text Label 4350 3200 0    50   ~ 0
-PB3
-Text Label 4350 2900 0    50   ~ 0
-PA13
-Text Label 4350 3000 0    50   ~ 0
-PA14
-Text Label 4350 3100 0    50   ~ 0
-PA15
-Text Label 4350 4100 0    50   ~ 0
-PC15
+PB14
 Text Label 5700 3200 2    50   ~ 0
-PB12
+PB13
+Text Label 5700 3500 2    50   ~ 0
+PB10
+Text Label 5700 3400 2    50   ~ 0
+PB11
+Text Label 5700 3800 2    50   ~ 0
+PB0
+Text Label 5700 3600 2    50   ~ 0
+PB2
+Text Label 5700 3700 2    50   ~ 0
+PB1
 Text Label 5700 4300 2    50   ~ 0
+PA3
+Text Label 5700 4200 2    50   ~ 0
+PA4
+Text Label 5700 4100 2    50   ~ 0
+PA5
+Text Label 5700 4000 2    50   ~ 0
+PA6
+Text Label 5700 3900 2    50   ~ 0
+PA7
+Text Label 4350 4200 0    50   ~ 0
+PA1
+Text Label 4350 4100 0    50   ~ 0
+PA0
+Text Label 4350 3800 0    50   ~ 0
+PC13
+Text Label 4350 3900 0    50   ~ 0
+PC14
+Text Label 4350 3400 0    50   ~ 0
+PB6
+Text Label 4350 3500 0    50   ~ 0
+PB7
+Text Label 4350 3600 0    50   ~ 0
+PB8
+Text Label 4350 3700 0    50   ~ 0
+PB9
+Text Label 4350 3300 0    50   ~ 0
+PB5
+Text Label 4350 3200 0    50   ~ 0
+PB4
+Text Label 4350 3100 0    50   ~ 0
+PB3
+Text Label 4350 2800 0    50   ~ 0
+PA13
+Text Label 4350 2900 0    50   ~ 0
+PA14
+Text Label 4350 3000 0    50   ~ 0
+PA15
+Text Label 4350 4000 0    50   ~ 0
+PC15
+Text Label 5700 3300 2    50   ~ 0
+PB12
+Text Label 4350 4300 0    50   ~ 0
 PA2
+Connection ~ 1200 1400
+Wire Wire Line
+	1200 1400 1200 1750
+Wire Notes Line
+	600  6400 4250 6400
+Wire Notes Line
+	600  7650 4250 7650
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 5E5783D5
+P 7000 3100
+F 0 "U?" H 6950 1511 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 6950 1420 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6400 1700 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4250 6400 4250 7650
+Text Notes 2200 7550 0    50   ~ 0
+U don't need most of them if u use F103\n
 $EndSCHEMATC
